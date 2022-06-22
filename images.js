@@ -33,7 +33,7 @@ class GalleryPicture {
     if (quantity < 0 || typeof quantity === "string") {
       throw Error(" please supply a number");
     } else if (this.availability === true) {
-      return `Theres only ${this.quantity} left`;
+      return `Theres only ${this.quantity} left!`;
     } else {
       return ``;
     }

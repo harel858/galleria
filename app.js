@@ -10,7 +10,7 @@ function getImagesTemplate(imageData) {
          <h6 class="card-title">${image.getPrice()}</h6>
         <p class="card-text">${image.getDescription()}</p>
         <a href="#" class="btn btn-primary">Get Picture</a>
-        <p class="card-text"><small class="text-muted">${image.isAvailable(
+        <p class="card-text"><small style="color:green !important;" class="text-muted">${image.isAvailable(
           image.quantity
         )}</small></p>
          <p class="card-text"><small style="color:red !important;" class="text-muted">${image.notAvailable(
