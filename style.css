@@ -43,6 +43,10 @@ h1::after{
 body:hover h1::after{
     transform: scaleX(1);
 }
+#search-bar{
+    max-width: 25em;
+}
+
 .card-img-overlay {
     position: relative;
 }
@@ -55,8 +59,14 @@ body:hover h1::after{
 #cardAnimation:hover{
     flex-grow: 1.23;
     cursor: pointer;
-    
-    
-    
+}
 
+.shrink{
+    display: flex;
+    max-width: 15em;
+    
+}
+.shrink:hover{
+    min-width: 20em;
+    cursor: pointer;
 }

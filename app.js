@@ -27,4 +27,17 @@ function displayImages(imageData) {
   const imageHtml = getImagesTemplate(imageData);
   container.innerHTML = imageHtml;
 }
+window.searchImage = function () {
+  const searchField = document.getElementById("search-field");
+  const searchTerm = searchField.value.trim();
+
+  const searchResult = images.filter((image) => {
+    return image.name
+      .toLocaleLowerCase()
+      .includes(searchTerm.toLocaleLowerCase());
+  });
+  displayImages(searchResult);
+  let card = document.querySelector(`#cardAnimation`);
+  card.classList.add("shrink");
+};
 displayImages(images);

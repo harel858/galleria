@@ -12,11 +12,20 @@
 </head>
 
 <body class="d-flex flex-column">
-    <div class="bg-d">
+    <div class="bg-d d-flex flex-column">
         <header>
             <h1 class="display-3">Welcome To Gallery</h1>
         </header>
+        <!-- filter bar -->
+        <div class="input-group mb-3 align-self-center" id="search-bar">
+            <input id="search-field" type="text" class="form-control" name="search" placeholder="Search On Our Gallery"
+                aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn btn-outline-secondary" onclick="searchImage()" type="button"
+                id="button-addon2">Search</button>
+        </div>
+
         <div class="container card-group d-flex justify-content-around"></div>
+
     </div>
 
 

@@ -34,13 +34,14 @@ class GalleryPicture {
       throw Error(" please supply a number");
     } else if (this.availability == false) {
       /* let small = document.querySelector(`small`);
-      small.style.color = red; */
+      small.style.color = `red`; */
       return `Not Available`;
     } else {
       return `Theres only ${this.quantity} left`;
     }
   }
 }
+
 const image1 = new GalleryPicture(
   `Hills India Nature`,
   18,
