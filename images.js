@@ -29,11 +29,11 @@ class GalleryPicture {
   getDescription() {
     return `${this.description}`;
   }
-
   isAvailable(quantity) {
     if (quantity < 0 || typeof quantity === "string") {
       throw Error(" please supply a number");
     } else if (this.availability == false) {
+      let small = document.querySelector();
       return `Not Available`;
     } else {
       return `Theres only ${this.quantity} left`;
