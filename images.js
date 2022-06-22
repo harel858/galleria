@@ -32,12 +32,19 @@ class GalleryPicture {
   isAvailable(quantity) {
     if (quantity < 0 || typeof quantity === "string") {
       throw Error(" please supply a number");
-    } else if (this.availability == false) {
-      /* let small = document.querySelector(`small`);
-      small.style.color = `red`; */
+    } else if (this.availability === true) {
+      return `Theres only ${this.quantity} left`;
+    } else {
+      return ``;
+    }
+  }
+  notAvailable(quantity) {
+    if (quantity < 0 || typeof quantity === "string") {
+      throw Error(" please supply a number");
+    } else if (this.availability === false) {
       return `Not Available`;
     } else {
-      return `Theres only ${this.quantity} left`;
+      return ``;
     }
   }
 }

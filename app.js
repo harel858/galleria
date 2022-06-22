@@ -13,6 +13,9 @@ function getImagesTemplate(imageData) {
         <p class="card-text"><small class="text-muted">${image.isAvailable(
           image.quantity
         )}</small></p>
+         <p class="card-text"><small style="color:red !important;" class="text-muted">${image.notAvailable(
+           image.quantity
+         )}</small></p>
         </div>
       </div>
     </div>
@@ -21,6 +24,11 @@ function getImagesTemplate(imageData) {
   });
   return html;
 }
+
+window.changeColor = function () {
+  let small = document.querySelector(`small`);
+  small.style.color = `red`;
+};
 
 function displayImages(imageData) {
   const container = document.querySelector(`.card-group`);
