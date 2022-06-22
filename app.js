@@ -25,11 +25,6 @@ function getImagesTemplate(imageData) {
   return html;
 }
 
-window.changeColor = function () {
-  let small = document.querySelector(`small`);
-  small.style.color = `red`;
-};
-
 function displayImages(imageData) {
   const container = document.querySelector(`.card-group`);
   const imageHtml = getImagesTemplate(imageData);
